@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"rtc3\startup_stm32f103x6.o"
+"rtc3\lcd16x2.o"
+"rtc3\lcd16x2_cfg.o"
+"rtc3\main.o"
+"rtc3\stm32f1xx_it.o"
+"rtc3\stm32f1xx_hal_msp.o"
+"rtc3\stm32f1xx_hal_gpio_ex.o"
+"rtc3\stm32f1xx_hal_rtc.o"
+"rtc3\stm32f1xx_hal_rtc_ex.o"
+"rtc3\stm32f1xx_hal.o"
+"rtc3\stm32f1xx_hal_rcc.o"
+"rtc3\stm32f1xx_hal_rcc_ex.o"
+"rtc3\stm32f1xx_hal_gpio.o"
+"rtc3\stm32f1xx_hal_dma.o"
+"rtc3\stm32f1xx_hal_cortex.o"
+"rtc3\stm32f1xx_hal_pwr.o"
+"rtc3\stm32f1xx_hal_flash.o"
+"rtc3\stm32f1xx_hal_flash_ex.o"
+"rtc3\stm32f1xx_hal_exti.o"
+"rtc3\stm32f1xx_hal_tim.o"
+"rtc3\stm32f1xx_hal_tim_ex.o"
+"rtc3\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RTC3\RTC3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC3.map" -o RTC3\RTC3.axf
